@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Form</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            width: 80%;
+            max-width: 800px;
+        }
+
+        h1 {
+            color: #1a5296;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            color: #1a5296;
+            margin-top: 30px;
+            margin-bottom: 10px;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 5px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #333;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        textarea {
+            resize: vertical;
+            height: 80px;
+        }
+
+        .education-section {
+            margin-bottom: 20px;
+            padding-left: 20px;
+            border-left: 4px solid #4CAF50; /* Green bar for education section */
+        }
+
+        .education-section h3 {
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                width: 100%;
+                padding: 15px;
+            }
+        }
+
+        .display-value {
+            font-weight: normal;
+            color: #555;
+        }
+
+        #photo {
+            width: 150px;
+            height: 200px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            object-fit: cover;
+            border: 1px solid #ddd;
+        }
+
+        .personal-info-container {
+            display: flex;
+            flex-direction: row-reverse; /* changed to row-reverse */
+            align-items: flex-start;
+            gap: 20px;
+        }
+
+        .text-info-container {
+            flex: 1;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Software Engineer CV Form</h1>
+
+        <h2>Personal Information</h2>
+        <div class="personal-info-container">
+            <img id="photo" src="CVform.jpg" alt="Profile Photo">
+            <div class="text-info-container">
+                <div class="form-group">
+                    <label for="name">NAME:</label>
+                    <div id="name" class="display-value">Paing Htoo Myat</div>
+                </div>
+                <div class="form-group">
+                    <label for="dob">DATE OF BIRTH:</label>
+                    <div id="dob" class="display-value">12 September 2004</div>
+                </div>
+                <div class="form-group">
+                    <label for="mobile">MOBILE NO:</label>
+                    <div id="mobile" class="display-value">09-767772424</div>
+                </div>
+                <div class="form-group">
+                  <label for="mobile">Age:</label>
+                  <div id="mobile" class="display-value">21</div>
+              </div>
+                <div class="form-group">
+                    <label for="email">E-MAIL:</label>
+                    <div id="email" class="display-value">painghtoomyat407@hotmail.com</div>
+                </div>
+                <div class="form-group">
+                    <label for="address">ADDRESS:</label>
+                    <div id="address" class="display-value">Myanmar,Mandalay</div>
+                </div>    
+                <div class="form-group">
+                    <label for="career">RELIGIOUS:</label>
+                    <div id="career" class="display-value">Buddish</div>
+                </div>
+                <div class="form-group">
+                  <label for="career">HOBBIES:</label>
+                  <div id="career" class="display-value">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias exercitationem, cum maxime architecto, quas natus ad officiis maiores ex dolores ducimus sequi, cupiditate perferendis mollitia aliquid praesentium magnam omnis minus.</div>
+              </div>
+              <div class="form-group">
+                <label for="career">ABOUT ME:</label>
+                <div id="career" class="display-value">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum quis deleniti magnam eaque id repellendus dolorum amet maiores doloribus. Veritatis soluta quibusdam totam? Soluta minus corporis architecto exercitationem deleniti sequi!</div>
+            </div>
+            </div>
+        </div>
+
+            <h2>Education</h2>
+            <div class="education-section">
+                <h3>2023-2025</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem laboriosam voluptas eveniet accusantium eligendi quibusdam consectetur ea possimus commodi, neque quaerat! Quas illo, doloribus voluptate voluptatum aperiam inventore voluptates corrupti?</p>
+            </div>
+    </div>
+</body>
+</html>
